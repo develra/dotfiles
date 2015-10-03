@@ -2,7 +2,6 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" TODO: this may not be in the correct place. It is intended to allow overriding <Leader>.
 " source ~/.vimrc.before if it exists.
 if filereadable(expand("~/.vimrc.before"))
   source ~/.vimrc.before
@@ -27,11 +26,11 @@ set hidden
 "turn on syntax highlighting
 syntax on
 
-" Change leader to a comma because the backslash is too far away
-" That means all \x commands turn into ,x
+" Change leader to a spacebar because the backslash is too far away
+" That means all \x commands turn into <space>x
 " The mapleader has to be set before vundle starts loading all 
 " the plugins.
-let mapleader=","
+let mapleader=" "
 
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundles.vim
@@ -81,7 +80,7 @@ set linebreak    "Wrap lines at convenient points
 " ================ Folds ============================
 
 set foldmethod=indent   "fold based on indent
-set foldnestmax=3       "deepest fold is 3 levels
+set foldnestmax=4       "deepest fold is 4 levels
 set nofoldenable        "dont fold by default
 
 " ================ Completion =======================
