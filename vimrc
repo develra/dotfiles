@@ -6,6 +6,7 @@ set nocompatible
 if filereadable(expand("~/.vimrc.before"))
   source ~/.vimrc.before
 endif
+let g:yadr_using_unsolarized_terminal = 1
 
 " ================ General Config ====================
 
@@ -59,9 +60,9 @@ endif
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set expandtab
 
 " Auto indent pasted text
@@ -114,3 +115,6 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+
+" ================ vimrc After ============================
+colorscheme gruvbox

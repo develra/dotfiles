@@ -24,7 +24,8 @@ alias psa="ps aux"
 alias psg="ps aux | grep "
 alias psr='ps aux | grep ruby'
 
-# Moving around
+# Clearing and Moving around
+alias c='clear'
 alias cdb='cd -'
 alias cls='clear;ls'
 
@@ -140,11 +141,6 @@ alias cl='clear'
 # Zippin
 alias gz='tar -zcvf'
 
-# Ruby
-alias c='rails c' # Rails 3
-alias co='script/console' # Rails 2
-alias cod='script/console --debugger'
-
 #If you want your thin to listen on a port for local VM development
 #export VM_IP=10.0.0.1 <-- your vm ip
 alias ts='thin start -a ${VM_IP:-127.0.0.1}'
@@ -158,10 +154,6 @@ alias k9='kill -9'
 # Gem install
 alias sgi='sudo gem install --no-ri --no-rdoc'
 
-# TODOS
-# This uses NValt (NotationalVelocity alt fork) - http://brettterpstra.com/project/nvalt/
-# to find the note called 'todo'
-alias todo='open nvalt://find/todo'
 
 # Forward port 80 to 3000
 alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 80 in'
@@ -176,16 +168,10 @@ alias zc='zeus console'
 # Rspec
 alias rs='rspec spec'
 alias sr='spring rspec'
-alias src='spring rails c'
 alias srgm='spring rails g migration'
 alias srdm='spring rake db:migrate'
 alias srdt='spring rake db:migrate'
 alias srdmt='spring rake db:migrate db:test:prepare'
-
-# Sprintly - https://github.com/nextbigsoundinc/Sprintly-GitHub
-alias sp='sprintly'
-# spb = sprintly branch - create a branch automatically based on the bug you're working on
-alias spb="git checkout -b \`sp | tail -2 | grep '#' | sed 's/^ //' | sed 's/[^A-Za-z0-9 ]//g' | sed 's/ /-/g' | cut -d"-" -f1,2,3,4,5\`"
 
 alias hpr='hub pull-request'
 alias grb='git recent-branches'
