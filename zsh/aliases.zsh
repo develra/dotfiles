@@ -12,6 +12,12 @@ elif [[ $unamestr == 'Darwin' ]]; then
   platform='darwin'
 fi
 
+# Personal
+alias todo='vim ~/todo.txt'
+
+# Pitchfork aliases
+alias rsync-sockets-01='rsync -a -e "ssh" --rsync-path="sudo rsync" /Users/michaelaaron/Google\ Drive/haystack/Pitchfork/ pi@100.107.62.99:/opt/haystack/pitchfork'
+
 # YADR support
 alias yav='yadr vim-add-plugin'
 alias ydv='yadr vim-delete-plugin'
