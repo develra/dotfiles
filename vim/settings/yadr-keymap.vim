@@ -2,7 +2,8 @@
 " General vim sanity improvements
 " ========================================
 "
-"
+"Use leader+z to toggle folds
+nnoremap <leader>z za
 " alias yw to yank the entire word 'yank inner word'
 " even if the cursor is halfway inside the word
 " FIXME: will not properly repeat when you use a dot (tie into repeat.vim)
@@ -15,7 +16,7 @@ nnoremap ,ow "_diwhp
 "make Y consistent with C and D
 nnoremap Y y$
 function! YRRunAfterMaps()
-  nnoremap Y   :<C-U>YRYankCount 'y$'<CR>
+    nnoremap Y   :<C-U>YRYankCount 'y$'<CR>
 endfunction
 
 " Make 0 go to the first character rather than the beginning
@@ -24,10 +25,6 @@ endfunction
 " you want the traditional beginning of line, use ^
 nnoremap 0 ^
 nnoremap ^ 0
-
-" ,# Surround a word with #{ruby interpolation}
-map ,# ysiw#
-vmap ,# c#{<C-R>"}<ESC>
 
 " ," Surround a word with "quotes"
 map ," ysiw"
