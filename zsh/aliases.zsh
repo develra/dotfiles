@@ -16,6 +16,7 @@ fi
 alias todo='vim ~/todo.txt'
 alias vimrc='vim ~/.vimrc'
 alias take='sudo chown -R $(whoami):admin'
+alias sudo-wpanctl='sudo /usr/local/bin/wpanctl'
 
 # YADR support
 alias yav='yadr vim-add-plugin'
