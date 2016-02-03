@@ -1,2 +1,3 @@
 Bundle 'pangloss/vim-javascript'
 Bundle 'mxw/vim-jsx'
+Bundle 'ternjs/tern_for_vim'

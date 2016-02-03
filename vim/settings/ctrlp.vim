@@ -51,6 +51,9 @@ map ,jV :CtrlP vendor<CR>
 map ,jF :CtrlP factories<CR>
 map ,jT :CtrlP test<CR>
 
+"search through tags quickly
+nnoremap <leader>tf :CtrlPTag<cr>
+
 "Cmd-Shift-(M)ethod - jump to a method (tag in current file)
 "Ctrl-m is not good - it overrides behavior of Enter
 nnoremap <silent> <D-M> :CtrlPBufTag<CR>

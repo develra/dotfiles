@@ -15,9 +15,7 @@ fi
 # Personal
 alias todo='vim ~/todo.txt'
 alias vimrc='vim ~/.vimrc'
-
-# Pitchfork aliases
-alias rsync-sockets-01='rsync -a -e "ssh" --rsync-path="sudo rsync" /Users/michaelaaron/Google\ Drive/haystack/Pitchfork/ pi@100.107.62.99:/opt/haystack/pitchfork'
+alias take='sudo chown -R $(whoami):admin'
 
 # YADR support
 alias yav='yadr vim-add-plugin'
