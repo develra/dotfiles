@@ -18,6 +18,12 @@ alias vimrc='vim ~/.vimrc'
 alias take='sudo chown -R $(whoami):admin'
 alias sudo-wpanctl='sudo /usr/local/bin/wpanctl'
 
+# NPM
+alias nrd='npm run dev'
+alias nrp='npm run prod'
+alias nrt='npm run test'
+alias nrb='npm run build'
+
 # YADR support
 alias yav='yadr vim-add-plugin'
 alias ydv='yadr vim-delete-plugin'
