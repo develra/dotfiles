@@ -87,12 +87,11 @@ nnoremap <silent> ,x :bn<CR>
 " ==============================
 " Window/Tab/Split Manipulation
 " ==============================
-" Move between split windows by using the four directions H, L, K, J
-" NOTE: This has moved to vim/settings/vim-tmux-navigator.vim.
-" nnoremap <silent> <C-h> <C-w>h
-" nnoremap <silent> <C-l> <C-w>l
-" nnoremap <silent> <C-k> <C-w>k
-" nnoremap <silent> <C-j> <C-w>j
+" Move between vim split windows by using the arrow keys
+ nnoremap <silent> <Left> <C-w>h
+ nnoremap <silent> <Right> <C-w>l
+ nnoremap <silent> <Up> <C-w>k
+ nnoremap <silent> <Down> <C-w>j
 
 " Make gf (go to file) create the file, if not existent
 nnoremap <C-w>f :sp +e<cfile><CR>
@@ -122,14 +121,14 @@ imap <silent> <C-J> <%  %><Esc>2hi
 nnoremap <silent> ,cf :let @* = expand("%:~")<CR>
 nnoremap <silent> ,cn :let @* = expand("%:t")<CR>
 
-"Clear current search highlight by double tapping //
+"Clear current search highlvght by double tapping //
 nmap <silent> // :nohlsearch<CR>
 
 "(v)im (c)ommand - execute current line as a vim command
-nmap <silent> ,vc yy:<C-f>p<C-c><CR>
+nmap <silent> vc yy:<C-f>p<C-c><CR>
 
 "(v)im (r)eload
-nmap <silent> ,vr :so %<CR>
+nmap <silent> vr :so %<CR>
 
 " Type ,hl to toggle highlighting on/off, and show current value.
 noremap ,hl :set hlsearch! hlsearch?<CR>
