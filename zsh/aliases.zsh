@@ -17,6 +17,7 @@ alias todo='vim ~/todo.txt'
 alias vimrc='vim ~/.vimrc'
 alias take='sudo chown -R $(whoami):admin'
 alias sudo-wpanctl='sudo /usr/local/bin/wpanctl'
+<<<<<<< 668254df69f7f2a21092d946b254708a2e7efc7b
 
 # NPM
 alias nrd='npm run dev'
@@ -24,7 +25,12 @@ alias nrp='npm run prod'
 alias nrt='npm run test'
 alias nrb='npm run build'
 
-# YADR support
+alias rsync-sockets-01-phoenix-weave-device='rsync -avz ~/Stash/phoenix-weave-device/results/arm-unknown-linux-gnueabihf pi@100.107.62.99:Stash/phoenix-weave-device/results/'
+alias rsync-sockets-02-phoenix-weave-device='rsync -avz ~/Stash/phoenix-weave-device/results/arm-unknown-linux-gnueabihf pi@100.107.62.151:Stash/phoenix-weave-device/results/'
+alias weave-test-src='/usr/local/google/home/michaelaaron/Stash/phoenix-weave-device/platform/phoenix/production/sw/nestlabs/apps/weave-test'
+alias weave-test-result='/usr/local/google/home/michaelaaron/Stash/phoenix-weave-device/results/x86_64-unknown-linux-gnu'
+alias ssh-sockets-01='ssh pi@100.107.62.99 -t zsh'
+alias ssh-sockets-02='ssh pi@100.107.62.151 -t zsh'
 alias yav='yadr vim-add-plugin'
 alias ydv='yadr vim-delete-plugin'
 alias ylv='yadr vim-list-plugin'
