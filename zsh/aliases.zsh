@@ -17,7 +17,6 @@ alias todo='vim ~/todo.txt'
 alias vimrc='vim ~/.vimrc'
 alias take='sudo chown -R $(whoami):admin'
 alias sudo-wpanctl='sudo /usr/local/bin/wpanctl'
-<<<<<<< 668254df69f7f2a21092d946b254708a2e7efc7b
 
 # NPM
 alias nrd='npm run dev'
