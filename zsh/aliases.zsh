@@ -14,8 +14,10 @@ fi
 
 # Personal
 alias todo='vim ~/todo.txt'
+alias personal-todo='vim ~/personal-todo.txt'
 alias vimrc='vim ~/.vimrc'
 alias take='sudo chown -R $(whoami):admin'
+alias untake='sudo chown -R root'
 alias sudo-wpanctl='sudo /usr/local/bin/wpanctl'
 
 # NPM
@@ -24,12 +26,6 @@ alias nrp='npm run prod'
 alias nrt='npm run test'
 alias nrb='npm run build'
 
-alias rsync-sockets-01-phoenix-weave-device='rsync -avz ~/Stash/phoenix-weave-device/results/arm-unknown-linux-gnueabihf pi@100.107.62.99:Stash/phoenix-weave-device/results/'
-alias rsync-sockets-02-phoenix-weave-device='rsync -avz ~/Stash/phoenix-weave-device/results/arm-unknown-linux-gnueabihf pi@100.107.62.151:Stash/phoenix-weave-device/results/'
-alias weave-test-src='/usr/local/google/home/michaelaaron/Stash/phoenix-weave-device/platform/phoenix/production/sw/nestlabs/apps/weave-test'
-alias weave-test-result='/usr/local/google/home/michaelaaron/Stash/phoenix-weave-device/results/x86_64-unknown-linux-gnu'
-alias ssh-sockets-01='ssh pi@100.107.62.99 -t zsh'
-alias ssh-sockets-02='ssh pi@100.107.62.151 -t zsh'
 alias yav='yadr vim-add-plugin'
 alias ydv='yadr vim-delete-plugin'
 alias ylv='yadr vim-list-plugin'
@@ -170,7 +166,6 @@ alias k9='kill -9'
 
 # Gem install
 alias sgi='sudo gem install --no-ri --no-rdoc'
-
 
 # Forward port 80 to 3000
 alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 80 in'
