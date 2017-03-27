@@ -6,6 +6,8 @@ path=(
   $HOME/.yadr/bin
   $HOME/.yadr/bin/yadr
   /Library/Frameworks/Python.framework/Versions/2.7/bin
-  $Home/bin
+  $HOME/Library/Python/2.7/bin
+  $HOME/bin
+  /usr/local/git/current/bin
 )
 

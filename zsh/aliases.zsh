@@ -19,6 +19,8 @@ alias vimrc='vim ~/.vimrc'
 alias take='sudo chown -R $(whoami):admin'
 alias untake='sudo chown -R root'
 alias sudo-wpanctl='sudo /usr/local/bin/wpanctl'
+alias scratch='vim ~/scratch.txt'
+alias wde='cd ~/Stash/haystack/client/clients/Electron; electron main.js'
 
 # NPM
 alias nrd='npm run dev'
