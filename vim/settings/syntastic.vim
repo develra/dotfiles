@@ -9,5 +9,11 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 
+"Shrink the error window a bit
+let g:syntastic_loc_list_height=4
+
 "Configure Which syntastic checker to use
 let g:syntastic_javascript_checkers = ['eslint']
+
+"use gPyLint 
+let g:syntastic_python_pylint_exe='gpylint'
