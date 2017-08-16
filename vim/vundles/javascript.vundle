@@ -1,1 +1,4 @@
-Bundle 'pangloss/vim-javascript'
+Bundle "pangloss/vim-javascript"
+Bundle "glench/vim-jinja2-syntax"
+Bundle "Quramy/tsuquyomi"
+Bundle "leafgarland/typescript-vim"

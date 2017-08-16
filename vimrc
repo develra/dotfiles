@@ -27,6 +27,10 @@ set hidden
 
 "turn on syntax highlighting
 syntax on
+" but only for lines 200 characters or less
+set synmaxcol=200
+set nocursorline
+
 
 " Change leader to a spacebar because the backslash is too far away
 " That means all \x commands turn into <space>x

@@ -1,13 +1,11 @@
 # path, the 0 in the filename causes this to load first
 path=(
-  $HOME/OpenSource/depot_tools
-  /usr/local/mysql/bin
   $path
+  /usr/local/mysql/bin
+  /usr/local/git/current/bin
   $HOME/.yadr/bin
   $HOME/.yadr/bin/yadr
-  /Library/Frameworks/Python.framework/Versions/2.7/bin
   $HOME/Library/Python/2.7/bin
   $HOME/bin
-  /usr/local/git/current/bin
 )
 
