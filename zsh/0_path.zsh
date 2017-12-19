@@ -7,5 +7,6 @@ path=(
   $HOME/.yadr/bin/yadr
   $HOME/Library/Python/2.7/bin
   $HOME/bin
+  $Home/Stash/wulfcli/src/bin
 )
 
